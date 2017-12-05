@@ -1,8 +1,7 @@
-
-/* *****************************************
-AUTHOR Nathan Johnson
-******************************************** */
-
+/*
+Author Nathan Johnson
+Program gets information about a room and gives the area waste and total area of carpet there needs to be
+*/
 import java.util.Scanner;
 
 class Task2

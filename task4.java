@@ -1,4 +1,8 @@
-//Author Nathan Johnson
+/*
+Author Nathan Johnson
+Program stores information about a station in a record and prints it upon request
+*/
+
 import java.util.*;
 
 

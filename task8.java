@@ -1,3 +1,7 @@
+/*
+Author Nathan Johnson
+Program asks for a number of options when buying a car and stores them in a record and gives a prices accordingly
+*/
 import java.util.*;
 class task8
 {

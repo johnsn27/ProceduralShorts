@@ -1,6 +1,8 @@
+/*
+Author Nathan Johnson
+Program stores information about a painting in a room in a record and prints it on request
+*/
 import java.util.Scanner;
-
-
 class task9
 {
 
@@ -11,7 +13,7 @@ class task9
        System.exit(0);
    }
 
-    public static void createPainting()
+    public static void createPainting() //creates the records
     {
 
       Painting s1 = initPainting("Woman with a Pearl Necklace in a Loge", "Mary Cassatt", "1879", "1");
@@ -22,7 +24,7 @@ class task9
 
     }
 
-    public static void initArray(Painting a1, Painting a2, Painting a3, Painting a4)
+    public static void initArray(Painting a1, Painting a2, Painting a3, Painting a4) //initialises the array
     {
 
       final int HOWMANYROOMS = 4;
@@ -36,7 +38,7 @@ class task9
 
     }
 
-    public static void enterRoom(String[] artCollection)
+    public static void enterRoom(String[] artCollection) //repeatedly asks user for the room number and prints out information about what is in that room
     {
 
       for(int i = 1; i < 5; i++)
@@ -62,7 +64,7 @@ class task9
 
     }
 
-    public static String input(String message)
+    public static String input(String message) // general user input method
     {
        Scanner scanner = new Scanner(System.in);
        String answer;
@@ -73,41 +75,40 @@ class task9
        return answer;
     }
 
-    public static int inputInt(String message)
+    public static int inputInt(String message) // general integer input method
     {
        return Integer.parseInt(input(message));
     }
 
-   public static String PaintingToString (Painting s)
+   public static String PaintingToString (Painting s) // converts a record to a string
    {
      String message = "The painting in Gallery " + getRoomNumber(s) + " is by " + getArtistName(s) + ". It was painted in " + getYear(s) +" and is called " + getPaintingName(s);
      return message;
    }
 
     // Getter methods for Painting record type
-    // Return the name from a student record
-    //
-   public static String getPaintingName (Painting s)
+
+   public static String getPaintingName (Painting s) // return the painting name
    {
      return s.paintingName;
    }
 
     // Return the id from a student record
-   public static String getArtistName (Painting s)
+   public static String getArtistName (Painting s) // return the artist name
    {
      return s.artistName;
    }
 
-   public static String getYear (Painting s)
+   public static String getYear (Painting s) // returns the year
    {
      return s.year;
    }
 
-   public static String getRoomNumber (Painting s)
+   public static String getRoomNumber (Painting s) // returns the room number
    {
      return s.room;
    }
-   public static Painting initPainting (String paintingName, String artistName, String year, String room)
+   public static Painting initPainting (String paintingName, String artistName, String year, String room) // create and initialises a painting
    {
      Painting s = new Painting();
 
@@ -119,7 +120,7 @@ class task9
      return s;
    }
 
-   public static void println(String m)
+   public static void println(String m) // general print line method
    {
 
       System.out.println(m);
@@ -129,7 +130,7 @@ class task9
 
 class Painting
 {
-   String paintingName; // The Paintings full name
+   String paintingName;
    String artistName;
    String year;
    String room;

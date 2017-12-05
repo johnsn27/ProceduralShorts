@@ -1,7 +1,7 @@
-
-/* *****************************************
+/*
 AUTHOR Nathan Johnson
-******************************************** */
+Program prints the items on a menu
+*/
 
 import java.util.Scanner; // import the swing library for I/O
 

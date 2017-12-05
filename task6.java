@@ -1,3 +1,8 @@
+/*
+Author Nathan Johnson
+Program asks user for the takings at the box office for certain films and then prints the film that took the highest earnings and the total takings of each
+of the films at the box office
+*/
 import java.util.*;
 
 class task6

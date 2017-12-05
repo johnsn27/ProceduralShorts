@@ -1,3 +1,7 @@
+/*
+Author Nathan Johnson
+Program allows user to enter number of bottles and the program prints the 'Green Bottles' song from that number
+*/
 import java.util.*;
 
 class task5 {
